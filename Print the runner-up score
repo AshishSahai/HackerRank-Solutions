@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    large=sorted(arr)
+    n=len(large)
+
+    max1= max(large)
+    #print(max1)
+    while n!=0:
+        if large[n-2] <max1:
+            max2=large[n-2]
+            print(max2)
+            break
+
+        else:
+            n=n-1
